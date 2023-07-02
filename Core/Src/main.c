@@ -128,7 +128,7 @@ void SystemClock_Config(void);
 	return 0;// 无按键按下
 } */
 
-/* uint8_t keyscan(void)
+uint8_t keyscan(void)
 {
   if (KEYA == 0) keyboard[3] = 0x04; else keyboard[3] = 0;
   if (KEYS == 0) keyboard[4] = 0x16; else keyboard[4] = 0;
@@ -138,7 +138,7 @@ void SystemClock_Config(void);
   if (KEYL == 0) keyboard[8] = 0x0f; else keyboard[8] = 0;
   if (KEYLS == 0) mouseHID_t.BYTE2  |= 1; else keyboard[3] &= 0xfe;
   if (KEYRS == 0) mouseHID_t.BYTE2  |= 2; else keyboard[3] &= 0xfd;
-} */
+} 
 
 
 
