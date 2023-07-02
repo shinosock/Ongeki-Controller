@@ -1,0 +1,3 @@
+Load "usb_test\\usb_test.axf" 
+Erase Done.Programming Done.Verify OK.Application running ...
+Flash Load finished at 19:59:17

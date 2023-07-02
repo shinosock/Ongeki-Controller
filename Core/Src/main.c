@@ -136,8 +136,8 @@ uint8_t keyscan(void)
   if (KEYJ == 0) keyboard[6] = 0x0d; else keyboard[6] = 0;
   if (KEYK == 0) keyboard[7] = 0x0e; else keyboard[7] = 0;
   if (KEYL == 0) keyboard[8] = 0x0f; else keyboard[8] = 0;
-  if (KEYLS == 0) mouseHID_t.BYTE2  |= 1; else keyboard[3] &= 0xfe;
-  if (KEYRS == 0) mouseHID_t.BYTE2  |= 2; else keyboard[3] &= 0xfd;
+  if (KEYLS == 0) mouseHID_t.BYTE2  |= 1; else mouseHID_t.BYTE2 &= 0xfe;
+  if (KEYRS == 0) mouseHID_t.BYTE2  |= 2; else mouseHID_t.BYTE2 &= 0xfd;
 }
 
 
